@@ -43,7 +43,7 @@ body:
   - type: dropdown
     id: language
     attributes:
-      label: OS
+      label: Programming Language
       description: What is programming language are you using?
       multiple: true
       options:
