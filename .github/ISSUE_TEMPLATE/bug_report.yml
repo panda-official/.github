@@ -3,7 +3,7 @@ description: File a bug report
 title: "Bug: "
 labels: ["bug", "triage"]
 assignees:
-  - octocat
+  -
 body:
   - type: markdown
     attributes:
@@ -20,7 +20,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: version
     attributes:
       label: Version
@@ -38,21 +38,37 @@ body:
         - Linux
         - MacOS
         - Windows
-
     validations:
       required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: What is programming language are you using?
+      multiple: true
+      options:
+        - Python
+        - C++
 
   - type: textarea
     id: snippet
     attributes:
       label: Snippet to repeat the bug
-      description: Put some snippet code to help us to repeat the error
+      description: Put some snippet of code to help us to repeat the error
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: If you have some errors or any relevant information in logs, put them here
+      render: Shell
 
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
