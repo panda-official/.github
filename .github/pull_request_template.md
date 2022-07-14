@@ -1,7 +1,7 @@
-Closes #
+**Closes** #
 
 ### Please check if the PR fulfills these requirements
-- 
+
 - [ ] Tests for the changes have been added (for bug fixes / features)
 - [ ] Docs have been added / updated (for bug fixes / features)
 - [ ] CHANGELOG.md have been updated (for bug fixes / features / docs)
@@ -10,7 +10,6 @@ Closes #
 ### What kind of change does this PR introduce?
 
 (Bug fix, feature, docs update, ...)
-
 
 ### What is the current behavior?
 
