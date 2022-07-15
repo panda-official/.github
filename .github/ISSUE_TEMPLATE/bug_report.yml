@@ -60,8 +60,14 @@ body:
     id: logs
     attributes:
       label: Logs
-      description: If you have some errors or any relevant information in logs, put them here
+      description: If you have some errors or any relevant information in logs, put them here if they aren't too long
       render: Shell
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Drop any files which can be useful (samples, datasets, logs ...)
 
   - type: checkboxes
     id: terms
